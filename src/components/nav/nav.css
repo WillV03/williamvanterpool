@@ -1,0 +1,26 @@
+
+NavLink {
+    padding: 5px;
+}
+a {padding: 10px;}
+.link {
+    text-align: right;
+    white-space: nowrap;
+}
+body {
+    padding-top: 60px;
+}
+
+#homeLink {
+    text-decoration: solid;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+#otherLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}

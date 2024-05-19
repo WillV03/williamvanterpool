@@ -1,10 +1,14 @@
 import React from "react";
-import Nav from "./nav";
+import Nav from "./nav/nav";
 import { Outlet } from "react-router";
 import styled from 'styled-components';
 
 const Body = styled.div`
 display: flex;
+`
+const SiteContainer = styled.div`
+    display: flex;
+    flex-direction: column;
 `
 
 function Loading(){
@@ -15,14 +19,13 @@ function Loading(){
 
 export default function Root(){
     return(
-        <>
+        <SiteContainer>
         <Nav/>
         <Body>
             <React.Suspense fallback={<Loading/>}>
                 <Outlet/>
-                {/* <h1>Test</h1> */}
             </React.Suspense>
         </Body>
-        </>
+        </SiteContainer>
     )
 }
