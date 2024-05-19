@@ -1,0 +1,19 @@
+#navigation {
+    background-color:#38686A;
+    text-align: right;
+}
+
+.NavLink {
+    white-space: nowrap;
+}
+
+.link {
+    color: #ffffff;
+    text-align: right;
+    white-space: nowrap;
+}
+
+#homeNav {
+    /* text-decoration: solid; */
+    text-align: left;
+}
