@@ -49,17 +49,17 @@ export default function Nav(){
                     >
                         <span class="link">Contact Me</span>
                     </NavLink> */}
-                    <Link>
+                    <Link href='/experience'>
                         <Typography variant="link">
                             My Experience
                         </Typography>
                     </Link>
-                    <Link>
+                    <Link href='/projects'>
                         <Typography variant="link">
                             My Projects
                         </Typography>
                     </Link>
-                    <Link>
+                    <Link href='/contact-me'>
                         <Button variant="contained">
                             Contact Me
                         </Button>
