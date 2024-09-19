@@ -1,5 +1,5 @@
 // import React from "react";
-import { NavLink } from "react-router-dom"
+// import { NavLink } from "react-router-dom"
 import { NavContainer, Navigation} from "./navStyle"
 import './nav.css'
 import { Link, Typography } from "@mui/material"
@@ -13,14 +13,17 @@ export default function Nav(){
                         fontFamily:'Playfair',
                         alignItems: 'center'
                     }} href="/" underline="hover">
-                <Typography variant="navTitle">William Vanterpool</Typography>
+                <Typography variant="link" sx={{
+                    fontSize: '1.5rem'
+                }}>William Vanterpool</Typography>
                 </Link>
                 <Box id="otherLinks" sx={{
                     display: 'flex',
                     textAlign: 'right',
                     marginLeft: 'auto',
                     justifyContent: 'center',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    lineHeight: .5
                     
                 }}>
                     {/* <NavLink

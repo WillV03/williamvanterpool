@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
-import { teal } from './App.js'
-// import App from './App';
+import { theme } from './App.js'
 import reportWebVitals from './reportWebVitals';
 import Router from "./router";
 import { CssBaseline, ThemeProvider } from '@mui/material';
-
+import './App.css'
+import '@fontsource/poppins'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={teal}>
-      <CssBaseline sx={{fontFamily: 'Poppins'}}/>
+    <ThemeProvider theme={theme}>
+      <CssBaseline sx={{
+        fontFamily: 'Poppins'
+      }} />
       <Router />
     </ThemeProvider>
   </React.StrictMode>

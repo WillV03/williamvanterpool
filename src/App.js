@@ -1,7 +1,8 @@
 import { createTheme, responsiveFontSizes } from "@mui/material";
-import PlayfairDisplay from './fonts/Playfair.ttf'
-import Poppins from './fonts/Poppins.ttf'
-const theme = createTheme({
+import './fonts/Playfair.ttf'
+import  './fonts/Poppins.ttf'
+let theme = createTheme({
+    spacing: 5,
     palette: {
         primary:{
             main: '#007a6c',
@@ -11,9 +12,13 @@ const theme = createTheme({
         }
     },
     typography: {
-        fontFamily: 'Playfair, Poppins, Arial',
+        fontFamily: 'Poppins, Arial',
         h1: {
             fontFamily: 'Playfair',
+        },
+        h2: {
+            fontFamily: 'Playfair',
+            color: '#004e41'
         },
         link: {
             fontFamily: 'Playfair',
@@ -30,12 +35,19 @@ const theme = createTheme({
                 @font-face {
                     font-family: 'Poppins';
                     font-style: normal;
-                    src: url(${Poppins}) format('ttf');
+                    src: url(Poppins) format('ttf');
                 }
             `
+        },
+        MuiTypography: {
+            defaultProps: {
+                variantMapping:{
+                    h1Bold: 'h1'
+                }
+            }
         }
     }
 })
-let teal = responsiveFontSizes(theme)
+theme = responsiveFontSizes(theme)
 
-export { teal }
+export { theme }

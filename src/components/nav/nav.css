@@ -1,7 +1,4 @@
 
-NavLink {
-    padding: 5px;
-}
 a {padding: 10px;}
 .link {
     text-align: right;
@@ -10,11 +7,3 @@ a {padding: 10px;}
 body {
     padding-top: 60px;
 }
-/* 
-#otherLinks {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: auto;
-    gap: 10px;
-} */
